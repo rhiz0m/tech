@@ -1,0 +1,56 @@
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+  .wrapper {
+        background-color: white
+  }
+
+  .wrapper .navLeft {
+    margin-top: 15vh;
+    margin-left: 1em;
+  }
+
+  .wrapper .navbottom {
+    margin-top: 55vh;
+    margin-left: 35vh;
+  }
+
+  .wrapper .robotcontainer {
+    margin-top: 20vh;
+    margin-left: 38vh;
+  }
+
+  .wrapper {
+    padding: 0;
+    height: 95vh; /* vh = procent of viewport height */
+  }
+
+}
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+ 
+
+  .wrapper .navLeft {
+    margin-top: 10em;
+    margin-left: 0;
+  }
+
+  .wrapper .navbottom {
+    margin-top: 23em;
+    margin-left: 6em;
+  }
+
+  .wrapper .robotcontainer {
+    margin-top: 8em;
+    margin-left: 6em;
+  }
+  .wrapper header {
+    animation: none;
+    height: 95vh; /* vh = procent of viewport height */
+    clip-path: polygon(0 0, 0 100%, 100% 90%, 100% 0);
+  }
+
+  .wrapper {
+    padding: 0;
+
+  }
+}

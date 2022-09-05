@@ -1,0 +1,256 @@
+
+/************************************
+-------------------------------------
+About this page , contact, 
+
+
+1. Wrapper
+
+2. Navigation
+
+3. Roborsection
+
+4. Header
+
+5. Animations
+
+-------------------------------------
+************************************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 
+p {
+  font-family: "Helvetica", sans-serif;
+}
+
+.wrapper {
+  padding: 1em 1em;
+}
+
+header {
+  /* Image is from the Unsplash site. Free for download */
+  position: relative;
+  margin: 0 auto;
+  height: 95vh; /* vh = procent of viewport height */
+  clip-path: polygon(0 0, 0 100%, 98% 85%, 100% 0);
+  border-radius: 20px 0;
+  background-image: linear-gradient(rgba(2, 22, 122, 0.4), rgba(231, 20, 168, 0.3)), url(../images/mobilebg.jpeg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  animation: scalebg 6s ease-in-out; 
+  overflow: none;
+  z-index: 1;
+}
+
+/* Navigation*/
+
+nav {
+      position: fixed;
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      padding: 0em;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 20px 20px 0 0;
+      border: 1px solid rgba(0, 0, 0);
+}
+
+nav h1 { 
+      font-family: 'Orbitron', sans-serif;
+      text-transform: uppercase;
+      margin: 15px auto 15px auto;
+      font-weight: 700;
+      font-size: 2.5em;
+      letter-spacing: 5px;
+      color: white;
+}
+
+nav ul li {
+      display: inline-block;
+      text-align: center;
+      align-content: center; 
+      padding: 1.1em 2em;
+      margin: -10px 30px;
+      text-decoration: none;
+      background-color: rgb(0, 0, 0);
+      border: 1px solid white;
+      border-radius: 0 0px 0 20px;
+
+}
+
+nav ul li a {
+        font-family: 'Poiret One', cursive;
+        font-size: 0.8em;
+        text-decoration: none;
+        letter-spacing: 3px;
+        color: white;
+        z-index: 2;
+}
+
+
+
+nav ul li:hover {
+  /*background: linear-gradient(rgb(2, 22, 122), rgb(231, 20, 168));*/
+     animation: logos 1s ease-in;
+     animation-fill-mode: forwards;
+        border: 1px solid black;
+}
+
+/* Robot section */
+
+
+.mobile_section {
+  position: absolute;
+  display: block;
+  margin: 100px 10px auto 50px;
+  width: 250px;
+  height: 400px;
+  background: linear-gradient(rgb(2, 58, 122), rgb(0, 0, 0));
+  border: 1px solid white;
+  border-radius: 20px;
+  animation: movingMobile 7s ease-in-out infinite;
+}
+
+#mobile_header {display: block;
+    margin: 5px auto;
+    text-align: center;
+    width: 230px;
+    height: 30px;
+    color: white;
+}
+
+#mob_textarea {
+  position: relative;
+  display: block;
+  margin: 15px auto;
+  width: 200px;
+  height: 280px;
+  padding: 1em;
+  border-radius: 20px;
+
+
+}
+/* 6.Keyframe Animations. */
+
+@keyframes logos {
+  0% {opacity: 0.5;
+    background: linear-gradient(rgb(2, 58, 122), rgb(20, 119, 231));
+  }
+
+  50% {
+    transform: scaleX(1.1);
+  }
+
+
+100% {opacity: 1;
+  background: linear-gradient(rgb(2, 70, 122), rgb(20, 119, 231));
+}
+}
+
+@keyframes movingMobile {
+  0% {
+    transform: translateY(-5px);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+
+@keyframes logosMoveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px) scaleX(-0.5);
+   
+    }
+   
+    80% {
+      transform: translateY(5px);
+      transform: scaleX(1.1);
+     
+    }
+   
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+   
+  }
+
+  @keyframes movingEyes {
+    0% {
+     
+      transform: translateY(-8px);
+   
+    }
+
+    15% {
+        transform: scaleX(1.5);
+    }
+   
+    25% {
+      
+      transform: translateX(40px)
+     
+    }
+
+    35% {
+       
+        transform: scaleY(-1.1);
+    }
+
+    45% {
+       
+        transform: translateY(0px);
+      }
+   
+    100% {
+      
+      transform: translateY(-10px);
+    }
+   
+  }
+
+  @keyframes armsAnimation {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+  }
+ 
+
+  
+
+  @keyframes h1animation {
+    0% {opacity: 0%;
+        transform: translateX(-40px);
+    }
+
+    80% {
+      transform: translateX(10px);
+    }
+
+    100% {
+      transform: translateX(0px);
+      opacity: 100%;
+    }
+  }
+
+ 

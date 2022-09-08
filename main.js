@@ -53,10 +53,7 @@ function doFirst () {
      var a = sessionStorage.key(i);
      var b = sessionStorage.getItem(a);
     asideContent.innerHTML += a + " - " + b + "<br />";
-    /* skriver in värdena i rutan till höger under "summa". */
+
     }
 
  }
-
-
- //window.addEventListener("load", doFirst);

@@ -163,7 +163,7 @@ nav ul li:hover {
 }
 
 /* Mobile Buttons */
-.button {
+#btn-mobile {
   margin-left: 1em;
   display: inline-block;
   width: 3em;
@@ -172,10 +172,22 @@ nav ul li:hover {
  
 }
 
-.button:hover {
+#btn-mobile:hover {
   animation: button-animation 1s ease-in-out;
 }
 
+
+/* Aside section */
+
+#display #aside-items {
+  position: absolute;
+  margin: 120px auto auto 500px;
+  width: 650px;
+  height: 430px;
+  font-family: 'Poiret One', cursive;
+  padding: 1em;
+  color: white
+}
 
 /* 6.Keyframe Animations. */
 

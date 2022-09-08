@@ -62,31 +62,28 @@
                     <div id="screen-section">
                         <form>
                             <label for="title">To do list:</label><br>
-                            <input type="text" id="title" name="title" value="Title..."><br>
+                            <input type="text" id="title" name="title" value="Title..." onfocus="this.value=''"><br>
                         </form>
                         <form>
                             <label for="date">Due date:</label><br>
-                            <input type="text" id="due-date" name="due-date" value="Date when to do..."><br>
+                            <input type="text" id="due-date" name="due-date" value="Date when to do..." onfocus="this.value=''"><br>
                         </form>
                         <label for="notes">My notes:</label><br>
-                        <textarea id="notes" name="notes" value="title...">Write down your notes...
+                        <textarea id="notes" name="notes" value="title..." onfocus="this.value=''">Write down your notes...
                         </textarea>
                         <div class="rating-importance">
-                            <label for="rating">Rate Importance:</label><br>
+                            <label for="priority">Priority:</label><br>
                             <span>1</span>
-                            <input type="range" name="rating" id="rating" value="3" min="1" max="5">
+                            <input type="range" name="priority" id="priority" value="3" min="1" max="5">
                             <span>5</span>
                         </div>
                     </div>
+                    <p id="message-to-user"></p>   
                    
-                        <p id="message-to-user"></p>    
-                  
-                    <button class="button" id="session-storage"></button>    
-                    <button class="button" id="other"></button>
+                    <input type="button" class="btn"" id="btn-mobile" onClick="save();" />
                 </section>
-                <section>
-                    <aside class="aside-items">
-                        
+                <section id="display">
+                    <aside id="aside-items">
                     </aside>
                 </section>
             </header> 

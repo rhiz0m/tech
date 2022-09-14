@@ -14,7 +14,11 @@ About this page , contact,
 
 5. Mobile section
 
-5. Animations
+6. Aside Section
+
+7. Footer
+
+8. Animations
 
 -------------------------------------
 ************************************/
@@ -53,8 +57,8 @@ header {
 
 /* Navigation*/
 
-nav {
-  position: absolute;
+nav {display: block;
+  position: relative;
   width: 100%;
   margin: 0 auto 0 auto;
   background-color: rgba(0, 0, 0, 0.4);
@@ -93,17 +97,9 @@ nav ul li a {
   color: white;
 }
 
-nav ul .logos {
-  margin-top: 1em;
-  align-items: center;
-  width: 3.5em;
-  height: 3.5em;
-}
-
-
 
 nav ul li:hover {
-  animation: logos 1s ease-in;
+  animation: navMenu 1s ease-in;
   animation-fill-mode: forwards;
   border: 1px solid black;
 }
@@ -111,15 +107,19 @@ nav ul li:hover {
 /* Mobile section */
 
 .mobile-section {
-  display: block;
+  display: inline-block;
   position: absolute;
-  margin: 120px auto auto 180px;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: -280px;
   width: 250px;
   height: 430px;
+  font-family: 'Poiret One', cursive;
   background: linear-gradient(rgb(1, 34, 71), rgb(0, 0, 0));
   border: 1px solid white;
   border-radius: 20px;
   animation: movingMobile 7s ease-in-out infinite;
+  z-index: 2;
 }
 
 .mobile-section #screen-section {
@@ -133,8 +133,7 @@ nav ul li:hover {
   border: 2px solid black;
 }
 
-.mobile-section #screen-section label {
-  font-family: 'Dancing Script', cursive;
+.mobile-section #screen-section label { 
   font-weight: 700;
   color:white;
   padding: 2px auto;
@@ -155,6 +154,14 @@ nav ul li:hover {
   height: 60px;
 
 }
+
+input[type="range"] {
+  -webkit-appearance: none;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
 
 #message-to-user {
   margin: 0 auto;
@@ -179,19 +186,45 @@ nav ul li:hover {
 
 /* Aside section */
 
-#display #aside-items {
+#display #aside-terminal {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 40px;
   position: absolute;
-  margin: 120px auto auto 500px;
-  width: 650px;
-  height: 430px;
-  font-family: 'Poiret One', cursive;
+  width: 250px;
+  height: 410px;
+  font-family: 'Quantico', sans-serif;
+  font-size: 14px;
   padding: 1em;
-  color: white
+  color: rgb(75, 196, 83);
+  background-color: rgba(12, 13, 12, 0.7);
+  border: 1px solid black;
+
+
+}
+
+#display #aside-terminal #blinking {
+  animation: blinking 1.3s infinite;
+}
+
+/* Footer */
+
+footer {
+  position: relative;
+  margin: 20px auto;
+}
+
+footer .logos {
+  padding: 2em;
+  margin: 15px auto 15px auto;
+  width: 5em;
+  height: 5em;
+  text-decoration: none;
 }
 
 /* 6.Keyframe Animations. */
 
-@keyframes logos {
+@keyframes navMenu {
   0% {opacity: 0.5;
     background: linear-gradient(rgb(2, 58, 122), rgb(20, 119, 231));
   }
@@ -237,6 +270,20 @@ nav ul li:hover {
         transform: rotate(0);
         
        
+    }
+  }
+
+  @keyframes blinking {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
     }
   }
  

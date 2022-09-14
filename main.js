@@ -34,25 +34,25 @@ function doFirst () {
  function save() {
  
    let saveTitle = document.getElementById("title").value;
-
    let saveDueDate = document.getElementById("due-date").value;
-   sessionStorage.setItem(saveTitle, saveDueDate); 
-   
-  displayData();
 
+   sessionStorage.setItem(saveTitle, saveDueDate); 
+   //key: value-par i setItem.
+  displayData();
+//inhämtade värden 
   document.getElementById("title").value = "";
   document.getElementById("due-date").value = "";
 
  }
 
  function displayData() {
-  var asideContent = document.getElementById("aside-items");
+  var asideContent = document.getElementById("aside-terminal");
   asideContent.innerHTML = "";
 
      for (var i = 0; i < sessionStorage.length; i++) {
      var a = sessionStorage.key(i);
      var b = sessionStorage.getItem(a);
-    asideContent.innerHTML += a + " - " + b + "<br />";
+    asideContent.innerHTML += "The tiltle is: " + a + " - " + "The due date is: " + + b + "<br />";
 
     }
 

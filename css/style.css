@@ -111,7 +111,7 @@ nav ul li:hover {
   position: absolute;
   text-align: center;
   margin-top: 20px;
-  margin-left: -280px;
+  margin-left: -290px;
   width: 250px;
   height: 430px;
   font-family: 'Poiret One', cursive;
@@ -189,7 +189,6 @@ input[type="range"] {
 #display #aside-terminal {
   display: inline-block;
   margin-top: 20px;
-  margin-left: 40px;
   position: absolute;
   width: 250px;
   height: 410px;

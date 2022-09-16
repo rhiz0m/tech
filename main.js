@@ -34,7 +34,7 @@ function doFirst () {
  function save() {
  
    let saveTitle = document.getElementById("title").value;
-   let saveDueDate = document.getElementById("due-date").value;
+   let saveDueDate = document.getElementById("due-date").value + document.getElementById("notes").value;
 
    sessionStorage.setItem(saveTitle, saveDueDate); 
    //key: value-par i setItem.
@@ -52,7 +52,7 @@ function doFirst () {
      for (var i = 0; i < sessionStorage.length; i++) {
      var a = sessionStorage.key(i);
      var b = sessionStorage.getItem(a);
-    asideContent.innerHTML += "The tiltle is: " + a + " - " + "The due date is: " + + b + "<br />";
+    asideContent.innerHTML += "The tiltle is: " + a + " - " + "The due date is: " + b + "<br />";
 
     }
 

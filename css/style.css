@@ -208,9 +208,11 @@ input[type="range"] {
 
 /* Footer */
 
-footer {
+footer {display: inline-block;
+  align-content: center;
   position: relative;
   margin: 20px auto;
+  padding: 1em;
 }
 
 footer .logos {
@@ -219,6 +221,10 @@ footer .logos {
   width: 5em;
   height: 5em;
   text-decoration: none;
+}
+
+footer .logos :hover {
+  animation: logos 1s ease-in-out;
 }
 
 /* 6.Keyframe Animations. */
@@ -285,6 +291,20 @@ footer .logos {
       opacity: 1;
     }
   }
+
+@keyframes logos {
+  0% {
+    transform: scale(0.9);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1)
+  }
+}
  
 
 

@@ -9,25 +9,87 @@
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rwd.css">
 
     <!-- Google Fonts-->
+        <!--Main font-->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <!--Terminal section fonts-->
 
-    <title>Page under construction...</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">
+
+    <title>Andreas Github Page</title>
 </head>
 <body>
     <div class="wrapper">
-        <h2>Studying iOS/Android Developer at <a href="https://www.sti.se">STI.</a>
-        <p>no projects yet to show yet, but working on it!</p>
-        <p><a href="index.html">Home</a></p>
-
-    <script src="main.js"></script>
+        <header>
+            <nav>
+                <ul>    
+                    <li class="menu"><a href="index.html">Home</a></li>
+                    <li class="menu"><a href="https://github.com/rhiz0m">Github</a></li>
+                    <li class="menu"><a href="#footer">Contact</a></li>    
+                </ul>
+            </nav>
+            <section class="sti-projects">
+                <h2>STI-Projects</h2>
+                <ul id="sti-courses">
+                    <li>Intro till Apputveckling</li>
+                    <li>UX/UI</li>
+                    <li>OOP, datastrukturer, algoritmer och design</li>
+                    <li>Hybridutveckling med JavaScript</li>
+                    <li>Android-utveckling</li>
+                    <li>Projektmetodik</li>
+                    <li>iOS-utveckling</li>
+                    <li>Webbkommunikation, APIer och backend</li>
+                    <li>LIA</li>
+                    <li>Examensarbete</li>
+                </ul><br>
+            </section>   
+            <section class="other-projects">
+                <h2>Other Works</h2>
+                <ul id="other-works">
+                    <a href="#phaser-game"><li>"Capybara Game" made in Javascript and Phaser Framework. Work in progress.</li></a>
+                    <a href="#3danimation"><li>”Modellering och animation I Open Source miljö” .
+                        Högskolan i Gävle. 7.5 hp. 2020.</li></a>        
+                </ul>
+            </section>    
+        </header>
+        <section class="main-content">
+           <article id="phaser-game">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oOjVfTtt00g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Capybara Game made in Javascrip and the Framework Phaser. Work in progress...</p>
+           </article>
+            <article id="3danimation">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FefwdVl5soU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>“Wehrlysium”, Written and produced by: Andreas Antonsson. 2020.
+                Final project in the course: 
+                ”Modellering och animation I Open Source miljö” . 
+                Högskolan i Gävle. 7.5 hp.
+                The film was made in Blender 2.81.
+                Creative Commons 2.5.</p>
+            </article>
+        </section>
+        <footer id="footer">
+            <a href="https://us11.list-manage.com/contact-form?u=8a91b6d6d0d0bea4590fc2ece&form_id=7f60427059fa399bd2b5b2b2b8e46e5d" class="logos"> 
+                <img src="images/mail.png" alt="link to my projects" class="logos" id="coding">  
+            </a>
+            <a href="https://mailchi.mp/b069257497e3/wv0awp1vtj" class="logos"> 
+                <img src="images/mailchimp.png" alt="link to my projects" class="logos" id="coding">  
+            </a>
+            <a href="https://www.linkedin.com/in/andreas-antonsson-12209024b/" class="logos">
+                <img src="images/linkedin.png" alt="A linkedin logo" class="logos" id="linkedin">
+            </a> 
+            <a href="https://instagram.com" class="logos">
+                <img src="images/instagram_icon.png" alt="A discord logo" class="logos" id="discord">
+            </a>
+        </footer>
+    </div>
+<script src="main.js"></script>
 </body>
 </html>

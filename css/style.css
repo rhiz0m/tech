@@ -3,6 +3,7 @@
 -------------------------------------
 About this page , contact, 
 
+---Index styles---
 
 1. Wrapper
 
@@ -20,6 +21,10 @@ About this page , contact,
 
 8. Animation
 
+---myProjects Styles---
+
+9.
+
 -------------------------------------
 ************************************/
 
@@ -32,6 +37,8 @@ h6
 p {
   font-family: "Helvetica", sans-serif;
 }
+
+/*--- Index Styles ---*/
 
 .wrapper {
   position: relative;
@@ -306,6 +313,52 @@ footer .logos :hover {
   }
 }
  
+/*--- myProject Styles ---*/
 
+.sti-projects, .other-projects {
+  display: inline-block;
+  position: relative;
+  font-family: 'Poiret One', cursive;
+  width: 450px;
+  padding: 1em;
+  margin: 20px auto auto -500px;
+  background-color: rgba(12, 13, 12, 0.7);
+  border: 1px solid black;
+  color: white;
 
- 
+}
+
+.sti-projects h2, .other-projects h2 {
+  font-family: 'Quantico', sans-serif;
+  color: rgb(75, 196, 83);
+}
+
+.sti-projects ul li, .other-projects ul li {
+  line-height: 0.6;
+  padding: 1em;
+}
+
+.sti-projects a, .other-projects a {
+  color: white;
+  text-decoration: none;
+}
+
+.other-projects {position: absolute;
+  margin: 20px auto auto 20px;
+  
+}
+.other-projects ul li {
+  line-height: 1;
+}
+
+/* Main Content*/
+
+.main-content {
+  font-family: 'Poiret One', cursive;
+  margin: 10px auto;
+  width: 560px;
+}
+
+.main-content article p {
+  padding: 1em;
+}

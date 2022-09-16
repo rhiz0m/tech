@@ -318,7 +318,7 @@ footer .logos :hover {
 .sti-projects, .other-projects {
   display: inline-block;
   position: relative;
-  font-family: 'Poiret One', cursive;
+  font-family: 'Nanum Gothic', sans-serif;
   width: 450px;
   padding: 1em;
   margin: 20px auto auto -500px;
@@ -329,7 +329,7 @@ footer .logos :hover {
 }
 
 .sti-projects h2, .other-projects h2 {
-  font-family: 'Quantico', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
   color: rgb(75, 196, 83);
 }
 
@@ -354,11 +354,21 @@ footer .logos :hover {
 /* Main Content*/
 
 .main-content {
-  font-family: 'Poiret One', cursive;
+  font-family: 'Red Hat Display', sans-serif;
   margin: 10px auto;
   width: 560px;
 }
 
-.main-content article p {
+.main-content h3 {
   padding: 1em;
 }
+
+.main-content #project-title {
+  color: black;
+}
+
+.main-content article p {
+  font-family: 'Red Hat Display', sans-serif;
+  padding: 1em;
+}
+

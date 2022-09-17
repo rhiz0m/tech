@@ -14,48 +14,43 @@ function displayStorageOut() {
 }
 
 
-/* Session Storage */
-/* 
-problem
-  get data and put it into the "aside-item" element
+/*** Session Storage ***/
 
-solution
--save function works
-
-
-*/
-
-function doFirst () {
+const doFirst = () => {
   var button = document.getElementById("btn-mobile");
   button.addEventListener("click", save);
 
 }
 
- function save() {
+ const save = () => {
  
-   let saveTitle = document.getElementById("title").value;
-   let saveDueDate = document.getElementById("due-date").value + document.getElementById("notes").value;
+ const saveKey = ['To do: ', 'Date: ', 'Your Notes: ', 'Priority: '];
+ let saveValue = [' '];
 
-   sessionStorage.setItem(saveTitle, saveDueDate); 
+  saveValue[0] = document.getElementById("title").value;
+  saveValue[1] = document.getElementById("due-date").value;
+  saveValue[2] = document.getElementById("notes").value;
+  saveValue[3] = document.getElementById("priority").value;
    //key: value-par i setItem.
-  displayData();
-//inhämtade värden 
-  document.getElementById("title").value = "";
-  document.getElementById("due-date").value = "";
+   
+   displayData();
+
+   sessionStorage.setItem(saveKey[0], saveValue[0]);
+   sessionStorage.setItem(saveKey[1], saveValue[1]);
+   sessionStorage.setItem(saveKey[2], saveValue[2]); 
+   sessionStorage.setItem(saveKey[3], saveValue[3]); 
 
  }
 
- function displayData() {
-  var asideContent = document.getElementById("aside-terminal");
+ const displayData = () => {
+  let asideContent = document.getElementById("aside-terminal");
   asideContent.innerHTML = "";
 
-     for (var i = 0; i < sessionStorage.length; i++) {
-     var a = sessionStorage.key(i);
-     var b = sessionStorage.getItem(a);
-    asideContent.innerHTML += "The tiltle is: " + a + " - " + "The due date is: " + b + "<br />";
-
+     for (let i = 0; i < sessionStorage.length; i++) {
+     let a = sessionStorage.key(i);
+     let b = sessionStorage.getItem(a);
+    asideContent.innerHTML += a + " - " + b + "<br />";
     }
-
  }
 
 

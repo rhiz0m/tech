@@ -41,12 +41,15 @@
     padding: 1em; 
   }
 
-.main-content p {
+  .main-content p {
   text-align: left;
   padding: 0.5em;
 }
 
-
+  .main-content iframe {
+    width: 100%;
+    margin: 0;
+  }
 
   #footer .logos {
     position: relative;
@@ -57,5 +60,13 @@
     width: 4em;
     height: 4em;
     text-decoration: none;
+  }
+
+  .sti-projects, .other-projects {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+
+
   }
 }

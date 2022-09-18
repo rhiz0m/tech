@@ -42,7 +42,7 @@
   }
 
   .main-content p {
-    text-align: center;
+  text-align: center;
   padding: 0.5em;
 }
 
@@ -65,8 +65,15 @@
   .sti-projects, .other-projects {
     display: inline-block;
     position: relative;
+    width: auto;
     margin: 0 auto;
-
-
   }
+
+  .sti-projects ul li, .other-projects ul li {
+    line-height: 1.5;
+  }
+  .other-projects {
+    margin-bottom: -20px;
+  }
+
 }

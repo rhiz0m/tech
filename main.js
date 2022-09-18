@@ -24,7 +24,7 @@ const doFirst = () => {
 
  const save = () => {
  
- const saveKey = ['To do: ', 'Date: ', 'Your Notes: ', 'Priority: '];
+ const saveKey = ['To do: ', 'Due date: ', 'Notes: ', 'Priority: '];
  let saveValue = [' '];
 
   saveValue[0] = document.getElementById("title").value;

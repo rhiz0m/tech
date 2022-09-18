@@ -23,8 +23,6 @@ About this page , contact,
 
 ---myProjects Styles---
 
-9.
-
 -------------------------------------
 ************************************/
 
@@ -53,7 +51,7 @@ header {
   height: 95vh; /* vh = procent of viewport height */
   clip-path: polygon(0 0, 0 100%, 98% 85%, 100% 0);
   border-radius: 20px 0;
-  background-image: linear-gradient(rgba(43, 58, 132, 0.6), rgba(50, 158, 253, 0.5)), url(../images/mobile.jpg);
+  background-image: linear-gradient(rgba(43, 58, 132, 0.5), rgba(50, 158, 253, 0.6)), url(../images/mobile.jpg);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;

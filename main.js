@@ -27,18 +27,18 @@ const doFirst = () => {
  const save = () => {
  
 let title = document.getElementById("title").value;
-let dueDate = document.getElementById("due-date").value;
+let duedate = document.getElementById("due-date").value;
 let notes = document.getElementById("notes").value;
 let priority = document.getElementById("priority").value;
 
 const userInput = {
   title : title + "<br />",
-  dueDate : dueDate + "<br />",
+  due_date : duedate + "<br />",
   notes : notes + "<br />",
   priority : priority
 };
 //convert obj into string
-window.sessionStorage.setItem('users info: ' + "<br />", JSON.stringify(userInput));
+window.sessionStorage.setItem('users data: ' + "<br />", JSON.stringify(userInput));
 
 displayData();
 

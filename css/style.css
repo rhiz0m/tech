@@ -204,7 +204,7 @@ input[type="range"] {
   font-family: 'Quantico', sans-serif;
   font-size: 14px;
   padding: 1em;
-  color: rgb(75, 196, 83);
+  color: rgb(73, 186, 161);
   background-color: rgba(12, 13, 12, 0.7);
   box-shadow: 0 5px 20px 5px rgba(56, 78, 105, 0.8);
   border: 1px solid black;
@@ -336,7 +336,7 @@ footer .logos :hover {
 
 .sti-projects h2, .other-projects h2 {
   font-family: 'Red Hat Display', sans-serif;
-  color: rgb(75, 196, 83);
+  color: rgb(73, 186, 161);
 }
 
 .sti-projects ul li, .other-projects ul li {

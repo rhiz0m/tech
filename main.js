@@ -38,10 +38,10 @@ let userInput = {
   priority : priority
 };
 //convert obj into string
-let titleValue = window.sessionStorage.setItem('title: ', JSON.stringify(userInput.title));
-let dateValue = window.sessionStorage.setItem('due date: ', JSON.stringify(userInput.duedate));
-let notesValue = window.sessionStorage.setItem('notes: ', JSON.stringify(userInput.notes));
-let priorityValue = window.sessionStorage.setItem('priority: ', JSON.stringify(userInput.priority));
+window.sessionStorage.setItem('title: ', JSON.stringify(userInput.title));
+window.sessionStorage.setItem('due date: ', JSON.stringify(userInput.duedate));
+window.sessionStorage.setItem('notes: ', JSON.stringify(userInput.notes));
+window.sessionStorage.setItem('priority: ', JSON.stringify(userInput.priority));
 
 displayData();
 
@@ -50,7 +50,7 @@ displayData();
  const displayData = () => {
 
   let asideContent = document.getElementById("aside-terminal");
-  asideContent.innerHTML = "";
+  asideContent.innerHTML += "";
 
      for (let i = 0; i < sessionStorage.length; i++) {
      let a = sessionStorage.key(i);

@@ -38,12 +38,13 @@ let userInput = {
   priority : priority
 };
 //convert obj into string
-window.sessionStorage.setItem('title: ', JSON.stringify(userInput.title));
+
+window.sessionStorage.setItem('title: ', JSON.stringify(userInput.title)); 
 window.sessionStorage.setItem('due date: ', JSON.stringify(userInput.duedate));
 window.sessionStorage.setItem('notes: ', JSON.stringify(userInput.notes));
 window.sessionStorage.setItem('priority: ', JSON.stringify(userInput.priority));
 
-displayData();
+  displayData();
 
  }
 

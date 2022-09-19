@@ -16,6 +16,8 @@ function displayStorageOut() {
 
 /*** Session Storage ***/
 
+//Only stores values in strings. Key-value-pair.
+
 const doFirst = () => {
   var button = document.getElementById("btn-mobile");
   button.addEventListener("click", save);
@@ -24,34 +26,32 @@ const doFirst = () => {
 
  const save = () => {
  
- const saveKey = ['To do: ', 'Due date: ', 'Notes: ', 'Priority: '];
- let saveValue = [' '];
+let title = document.getElementById("title").value;
+let dueDate = document.getElementById("due-date").value;
+let notes = document.getElementById("notes").value;
+let priority = document.getElementById("priority").value;
 
-  saveValue[0] = document.getElementById("title").value;
-  saveValue[1] = document.getElementById("due-date").value;
-  saveValue[2] = document.getElementById("notes").value;
-  saveValue[3] = document.getElementById("priority").value;
-   //key: value-par i setItem.
-   
-   displayData();
+const userInput = {
+  title : title + "<br />",
+  dueDate : dueDate + "<br />",
+  notes : notes + "<br />",
+  priority : priority
+};
+//convert obj into string
+window.sessionStorage.setItem('users info: ' + "<br />", JSON.stringify(userInput));
 
-   sessionStorage.setItem(saveKey[0], saveValue[0]);
-   sessionStorage.setItem(saveKey[1], saveValue[1]);
-   sessionStorage.setItem(saveKey[2], saveValue[2]); 
-   sessionStorage.setItem(saveKey[3], saveValue[3]); 
+displayData();
 
  }
 
  const displayData = () => {
+
   let asideContent = document.getElementById("aside-terminal");
   asideContent.innerHTML = "";
 
      for (let i = 0; i < sessionStorage.length; i++) {
      let a = sessionStorage.key(i);
      let b = sessionStorage.getItem(a);
-    asideContent.innerHTML += a + " - " + b + "<br />";
+     asideContent.innerHTML += a + " - " + b + "<br />";
     }
  }
-
-
- window.addEventListener("load", doFirst);

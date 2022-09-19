@@ -43,7 +43,7 @@ p {
   padding: 1em 1em;
   text-align: center;
  
-  background-image: linear-gradient(rgb(255, 253, 240), rgba(209, 248, 254, 0.6))
+  background-image: linear-gradient(rgba(255, 254, 228, 0.8), rgba(188, 229, 248, 0.3))
   
 }
 
@@ -54,7 +54,7 @@ header {
   height: 95vh; /* vh = procent of viewport height */
   clip-path: polygon(0 0, 0 100%, 98% 85%, 100% 0);
   border-radius: 20px 0;
-  background-image: linear-gradient(rgba(89, 97, 135, 0.3), rgba(184, 254, 250, 0.6)), url(../images/arch2.jpeg);
+  background-image: linear-gradient(rgba(135, 89, 113, 0.2), rgba(184, 254, 250, 0.4)), url(../images/arch2.jpeg);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;

@@ -47,14 +47,14 @@
                     <div id="screen-section">
                         <form>
                             <label for="title">To do list:</label><br>
-                            <input type="text" id="title" name="title" value="Task..." onfocus="this.value=''"><br>
+                            <input type="text" id="title" name="title" value="*****" onfocus="this.value=''"><br>
                         </form>
                         <form>
                             <label for="date">Due date:</label><br>
-                            <input type="text" id="due-date" name="due-date" value="Date..." onfocus="this.value=''"><br>
+                            <input type="text" id="due-date" name="due-date" value="*****" onfocus="this.value=''"><br>
                         </form>
                         <label for="notes">Notes:</label><br>
-                        <textarea id="notes" name="notes" value="title..." onfocus="this.value=''">Mission Briefing...
+                        <textarea id="notes" name="notes" onfocus="this.value=''">*****
                         </textarea>
                         <div class="rating">
                             <label for="priority">Priority:</label><br>
@@ -64,7 +64,7 @@
                         </div>
                     </div>
                     <p id="message-to-user"></p>    
-                    <input type="button" class="btn"" id="btn-mobile" onClick="save();" />
+                    <input type="button" class="btn"" id="btn-mobile" onClick="saveData();" />
                 </section>
                 <section id="display">
                     <aside id="aside-terminal">
@@ -73,7 +73,7 @@
                 </section>
             </header> 
             <section class="main-content" id="main-page">
-                <h1>Hi, I am Andreas,</h1><br>
+                <p>Hi, I am Andreas,</p><br>
                 <p>Currently studying iOS/Android Developer at <a href="https://www.sti.se">Stockholms tekniska institut</a></p><br>
             </section>
             <footer id="footer">

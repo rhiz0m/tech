@@ -1,30 +1,27 @@
-
-//Eventlisteners for "mousing over" the the mobile buttons!
-
-document.getElementById("btn-mobile").addEventListener("mouseover", displayStorageIn);
-document.getElementById("btn-mobile").addEventListener("mouseout", displayStorageOut);
-
 //Functions that activates "Submit notes" when the mobile buttons are "moused over".
-
-function displayStorageIn() {
-  document.getElementById("message-to-user").innerHTML = "Submit notes!";
+const displayIn = () => {
+  document.getElementById("message-to-user").innerHTML = "Submit!";
 }
-function displayStorageOut() {
+const displayOut = () => {
   document.getElementById("message-to-user").innerHTML = "";
 }
 
+const doFirst = () => {
+  let button = document.getElementById("btn-mobile");
+  button.addEventListener("click", save);
+
+}
+
+//Eventlisteners for "mousing over" the the mobile buttons!
+
+document.getElementById("btn-mobile").addEventListener("mouseover", displayIn);
+document.getElementById("btn-mobile").addEventListener("mouseout", displayOut);
 
 /*** Session Storage ***/
 
 //Only stores values in strings. Key-value-pair.
 
-const doFirst = () => {
-  var button = document.getElementById("btn-mobile");
-  button.addEventListener("click", save);
-
-}
-
- const save = () => {
+ const saveData = () => {
  
 let title = document.getElementById("title").value;
 let dueDate = document.getElementById("due-date").value;
@@ -42,7 +39,7 @@ let userInput = {
 window.sessionStorage.setItem('title: ', JSON.stringify(userInput.title)); 
 window.sessionStorage.setItem('due date: ', JSON.stringify(userInput.duedate));
 window.sessionStorage.setItem('notes: ', JSON.stringify(userInput.notes));
-window.sessionStorage.setItem('priority: ', JSON.stringify(userInput.priority));
+window.sessionStorage.setItem('priority level is: ', JSON.stringify(userInput.priority));
 
   displayData();
 

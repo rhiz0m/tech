@@ -366,13 +366,6 @@ footer .logos :hover {
 
 /* Main Content*/
 
-.main-content {
-  font-family: 'Red Hat Display', sans-serif;
-  margin: 10px auto;
-  width: 560px;
-  height: auto;
-
-}
 
 #main-page {
   position: relative;
@@ -396,8 +389,20 @@ footer .logos :hover {
 }
 
 
-.main-content h3 {
+.main-content h1 {
+  font-weight: 700;
+  font-size: larger;
   padding: 1em;
+}
+
+.main-content {
+  position: relative;
+  display: block;
+  font-family: 'Red Hat Display', sans-serif;
+  margin: 10px auto;
+  width: 560px;
+  height: auto;
+
 }
 
 .main-content article {
@@ -410,8 +415,29 @@ footer .logos :hover {
 
 .main-content p {
   font-family: 'Red Hat Display', sans-serif;
-  
+  margin-top: auto;
 }
 
+
+.main-content #table-data {
+  margin-left: 10px;
+
+}
+
+.main-content #table-data th {
+  text-align: center;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 700;
+  border: 2px solid black;
+  background-color: rgb(157, 186, 226);
+  padding: 0.5em;
+}
+
+.main-content #table-data td {
+  text-align: center;
+  border: 2px solid black;
+  background-color: rgb(196, 221, 255);
+  padding: 0.5em;
+}
 
 

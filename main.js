@@ -6,6 +6,13 @@ const hideMobText = () => {
   document.getElementById("message-to-user").innerHTML = "";
 }
 
+
+/*Eventlisteners for "mousing over" the the mobile buttons. Const or Let must functions must be accessed first. 
+ReferenceError: Cannot access 'displayMobText' before initialization*/
+
+document.getElementById("btn-mobile").addEventListener("mouseover", displayMobText);
+document.getElementById("btn-mobile").addEventListener("mouseout", hideMobText);
+
 //Do first listen for user if the button gets activated
 
 const doFirst = () => {
@@ -14,19 +21,12 @@ const doFirst = () => {
 
 }
 
-/*Eventlisteners for "mousing over" the the mobile buttons. Const or Let must functions must be accessed first. 
-ReferenceError: Cannot access 'displayMobText' before initialization*/
-
-document.getElementById("btn-mobile").addEventListener("mouseover", displayMobText);
-document.getElementById("btn-mobile").addEventListener("mouseout", hideMobText);
-
 /*** Session Storage ***/
 //Web API for storing data in Browser.
 //Only stores values in strings. Key-value-pair.
 
  const saveData = () => {
  
-
 let title = document.getElementById("title").value;
 let dueDate = document.getElementById("due-date").value;
 let notes = document.getElementById("notes").value;
@@ -46,7 +46,7 @@ window.sessionStorage.setItem('due date: ', JSON.stringify(userInput.duedate));
 window.sessionStorage.setItem('notes: ', JSON.stringify(userInput.notes));
 window.sessionStorage.setItem('priority level is: ', JSON.stringify(userInput.priority));
 
-  displayData();
+displayData();
 
  }
 

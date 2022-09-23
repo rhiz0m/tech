@@ -392,6 +392,7 @@ footer .logos :hover {
 .main-content h1 {
   font-weight: 700;
   font-size: larger;
+  text-align: center;
   padding: 1em;
 }
 
@@ -406,7 +407,7 @@ footer .logos :hover {
 }
 
 .main-content article {
-  margin-bottom: 1em;
+  margin: 1em auto;
 }
 
 .main-content #project-title {
@@ -420,8 +421,8 @@ footer .logos :hover {
 
 
 .main-content #table-data {
-  margin-left: 10px;
-
+  display: block;
+  margin: 0 auto;
 }
 
 .main-content #table-data th {
